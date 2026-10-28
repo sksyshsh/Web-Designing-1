@@ -1,0 +1,65 @@
+
+<html>
+<head>
+    <title>ABES Engineering College</title>
+
+    <script>
+        function home()
+        {
+            document.getElementById("a").style.display = "block";
+            document.getElementById("d").style.display = "block";
+        }
+
+        function about()
+        {
+            document.getElementById("a").style.display = "block";
+            document.getElementById("d").style.display = "none";
+        }
+
+        function dept()
+        {
+            document.getElementById("a").style.display = "none";
+            document.getElementById("d").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>ABES Engineering College</h2>
+
+    <a href="#" onclick="home()">Home</a>
+    &nbsp;&nbsp;
+    <a href="#" onclick="about()">About</a>
+    &nbsp;&nbsp;
+    <a href="#" onclick="dept()">Departments</a>
+
+    <hr>
+
+    <div id="a">
+        <h3>About Our College</h3>
+        Welcome to ABESEC
+    </div>
+
+    <div id="d">
+        <h3>Departments and Courses</h3>
+
+        <ul>
+            <li>Computer Science
+                <ol>
+                    <li>B.Tech</li>
+                    <li>M.Tech</li>
+                </ol>
+            </li>
+
+            <li>Electronics
+                <ol>
+                    <li>B.Tech</li>
+                    <li>M.Tech</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
